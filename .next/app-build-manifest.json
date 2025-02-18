@@ -6,35 +6,45 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/error.js"
+    ],
     "/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/account/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/account/page.js"
+      "static/chunks/app/not-found.js"
     ],
-    "/about/page": [
+    "/cabins/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/cabins/loading.js"
     ],
     "/cabins/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/cabins/page.js"
     ],
-    "/account/layout": [
+    "/cabins/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/account/layout.js"
+      "static/chunks/app/cabins/not-found.js"
     ],
-    "/account/reservations/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/account/reservations/page.js"
+      "static/chunks/app/about/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ]
   }
 }
