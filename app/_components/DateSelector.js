@@ -27,8 +27,14 @@ function DateSelector({ settings, cabin, bookedDates }) {
   // SETTINGS
   const { minBookingLength, maxBookingLength } = settings;
 
+  // Define custom modifiers
+  const modifiers = {
+    selectedRange:
+      range.from && range.to ? { from: range.from, to: range.to } : undefined,
+  };
+
   return (
-    <div className='flex flex-col justify-between'>
+    <div className='flex flex-col justify-between '>
       <DayPicker
         className='pt-12 place-self-center'
         mode='range'
@@ -41,6 +47,15 @@ function DateSelector({ settings, cabin, bookedDates }) {
         toYear={new Date().getFullYear() + 5}
         captionLayout='dropdown'
         numberOfMonths={2}
+        modifiers={modifiers}
+        modifiersClassNames={{
+          selectedRange: 'bg-accent-500', // Custom class
+          selected: 'bg-accent-500', // Circle styling for start/end
+          range_start: 'bg-accent-500',
+          range_end: 'bg-accent-500',
+
+          range_middle: 'bg-accent-500', // The white area, change it to a better shade
+        }}
       />
 
       <div className='flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]'>
