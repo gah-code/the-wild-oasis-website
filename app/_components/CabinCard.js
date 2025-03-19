@@ -7,6 +7,8 @@ function CabinCard({ cabin }) {
 
   return (
     <div className='flex border-primary-800 border'>
+      {/* This is the shorthand for flex-grow, flex-shrink and flex-basis. The second and third parameters (flex-shrink and flex-basis) are optional.
+       */}
       <div className='flex-1 relative'>
         <Image
           src={image}

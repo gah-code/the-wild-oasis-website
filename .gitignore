@@ -12,7 +12,7 @@ node_modules/
 .public/
 starter/*
 .next/*
-
+.next/
 # Logs
 npm-debug.log*
 yarn-debug.log*

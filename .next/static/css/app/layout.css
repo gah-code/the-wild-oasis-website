@@ -631,6 +631,9 @@ video {
 .flex-1 {
   flex: 1 1 0%;
 }
+.flex-shrink {
+  flex-shrink: 1;
+}
 .flex-grow {
   flex-grow: 1;
 }
