@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useReservation } from './ReservationContext';
 
 function ReservationForm({ cabin, user }) {
